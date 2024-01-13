@@ -5,5 +5,11 @@ const calcBtn = document.getElementById('calcBtn');
 const imcResultEl = document.querySelector('.imcResult');
 const concResult = document.querySelector('.conclusao');
 
-alturaInp.value = 5
-console.log(alturaInp.value)
+let imc = 0;
+
+calcBtn.addEventListener('click', ()=>{ 
+    const alturaValue = parseFloat(alturaInp.value);
+    const pesoValue = parseFloat(pesoInp.value);
+    imc = pesoValue / (alturaValue) ** 2;
+})
+
