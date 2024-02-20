@@ -11,5 +11,6 @@ calcBtn.addEventListener('click', ()=>{
     const alturaValue = parseFloat(alturaInp.value);
     const pesoValue = parseFloat(pesoInp.value);
     imc = pesoValue / (alturaValue) ** 2;
+    imcResultEl.textContent = imc.toFixed(2);
 })
 
